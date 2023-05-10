@@ -1,0 +1,484 @@
+.aos-init {
+  opacity: 0;
+  transform: translateY(20px) translateX(-20px);
+  transition: opacity 1s, transform 1s;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-up-right {
+  from {
+    opacity: 0;
+    transform: translateY(20px) translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes fade-up-left {
+  from {
+    opacity: 0;
+    transform: translateY(20px) translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes fade-down-right {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes fade-down-left {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in,
+.fade-up,
+.fade-down,
+.fade-right,
+.fade-left,
+.fade-up-right,
+.fade-up-left,
+.fade-down-right,
+.fade-down-left {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.fade-in {
+  animation-name: fade-in;
+}
+.fade-up {
+  animation-name: fade-up;
+}
+
+.fade-down {
+  animation-name: fade-down;
+}
+
+.fade-right {
+  animation-name: fade-right;
+}
+
+.fade-left {
+  animation-name: fade-left;
+}
+
+.fade-up-right {
+  animation-name: fade-up-right;
+}
+
+.fade-up-left {
+  animation-name: fade-up-left;
+}
+
+.fade-down-right {
+  animation-name: fade-down-right;
+}
+
+.fade-down-left {
+  animation-name: fade-down-left;
+}
+
+.flip-left-init {
+  transform: perspective(2500px) rotateY(-100deg);
+  transition: transform 1s;
+}
+
+.flip-right-init {
+  transform: perspective(2500px) rotateY(100deg);
+  transition: transform 1s;
+}
+
+.flip-up-init {
+  transform: perspective(2500px) rotateX(-100deg);
+  transition: transform 1s;
+}
+
+.flip-down-init {
+  transform: perspective(2500px) rotateX(100deg);
+  transition: transform 1s;
+}
+
+.flip-left,
+.flip-right {
+  transform: perspective(2500px) rotateY(0);
+  backface-visibility: hidden;
+  transition-property: transform;
+  transition: transform 1s;
+}
+
+.flip-up,
+.flip-down {
+  transform: perspective(2500px) rotateX(0);
+  backface-visibility: hidden;
+  transition-property: transform;
+  transition: transform 1s;
+}
+
+.zoom-in-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: scale(0.6);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-in-up-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(0, 100px, 0) scale(0.6);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-in-down-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(0, -100px, 0) scale(0.6);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-in-right-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(-100px, 0, 0) scale(0.6);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-in-left-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(100px, 0, 0) scale(0.6);
+  transition: transform 1s opacity 1s;
+}
+.zoom-out-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: scale(1.2);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-out-up-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(0, 100px, 0) scale(1.2);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-out-down-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(0, -100px, 0) scale(1.2);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-out-right-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(-100px, 0, 0) scale(1.2);
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-out-left-init {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transform: translate3d(100px, 0, 0) scale(1.2);
+  transition: transform 1s opacity 1s;
+}
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes zoom-in-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0) scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes zoom-in-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0) scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes zoom-in-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0) scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes zoom-in-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0) scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes zoom-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+@keyframes zoom-out-up {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0) scale(0.6);
+  }
+}
+@keyframes zoom-out-down {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0) scale(0.6);
+  }
+}
+@keyframes zoom-out-right {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0) scale(0.6);
+  }
+}
+@keyframes zoom-out-left {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0) scale(0.6);
+  }
+}
+
+.zoom-in,
+.zoom-in-up,
+.zoom-in-down,
+.zoom-in-right,
+.zoom-in-left,
+.zoom-out,
+.zoom-out-up,
+.zoom-out-down,
+.zoom-out-right,
+.zoom-out-left {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transition: transform 1s opacity 1s;
+}
+
+.zoom-in {
+  animation-name: zoom-in;
+}
+.zoom-in-up {
+  animation-name: zoom-in-up;
+}
+.zoom-in-down {
+  animation-name: zoom-in-down;
+}
+.zoom-in-right {
+  animation-name: zoom-in-right;
+}
+.zoom-in-left {
+  animation-name: zoom-in-left;
+}
+.zoom-out {
+  animation-name: zoom-out;
+}
+.zoom-out-up {
+  animation-name: zoom-out-up;
+}
+.zoom-out-down {
+  animation-name: zoom-out-down;
+}
+.zoom-out-right {
+  animation-name: zoom-out-right;
+}
+.zoom-out-left {
+  animation-name: zoom-out-left;
+}
+
+.slide-up-init {
+  transition-property: transform;
+  visibility: hidden;
+  transform: translate3d(0, 100%, 0);
+}
+.slide-down-init {
+  transition-property: transform;
+  visibility: hidden;
+  transform: translate3d(0, -100%, 0);
+}
+.slide-right-init {
+  transition-property: transform;
+  visibility: hidden;
+  transform: translate3d(-100%, 0, 0);
+}
+.slide-left-init {
+  transition-property: transform;
+  visibility: hidden;
+  transform: translate3d(100%, 0, 0);
+}
+
+.slide-up,
+.slide-down,
+.slide-right,
+.slide-left {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  transition: transform 1s opacity 1s;
+}
+
+@keyframes slide-up {
+  0% {
+    visibility: visible;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    visibility: visible;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    visibility: visible;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    visibility: visible;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slide-up {
+  animation-name: slide-up;
+}
+.slide-down {
+  animation-name: slide-down;
+}
+.slide-right {
+  animation-name: slide-right;
+}
+.slide-left {
+  animation-name: slide-left;
+}
